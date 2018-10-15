@@ -50,3 +50,8 @@ table{
 td{
   width: 100px;
 }
+@media only screen and (max-width: 60px) {
+    body {
+        background-color: lightblue;
+    }
+}
