@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-*
-{
-	text-align: justify;
-}
 body{
               background-color: #e9ebee;              
               font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
@@ -11,17 +6,16 @@ body{
               max-width: 800px;               
           }
 
-=======
-*
-{
-	text-align: justify;
+p{
+	font-size: 2.5em;
+  text-align: center;
 }
-body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;               
-          }
 
->>>>>>> 759fd6c9ac52088669861973c8af6df8e272a326
+table{
+   text-align: left;
+   width: 100%
+ }
+
+td{
+  width: 100px;
+}
