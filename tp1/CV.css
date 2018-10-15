@@ -14,7 +14,13 @@ p{
   text-decoration-line: underline;
   text-align: justify-all;
 }
-
+h1{
+  text-decoration-line: underline;
+}
+a:hover{
+  color: orange;
+  background-color: blue;
+}
 #maphoto
 {
   float: right;
@@ -22,10 +28,20 @@ p{
 
 
 table{
+  background-color: white;
   text-align: left;
   width: 100%;
  }
-
+ .nth-child{
+  background-color: gray;
+  text-align: left;
+ }
+ table:hover{
+  background-color: black;
+  color: white;
+  text-align: left;
+  width: 100%;
+ }
 td{
   width: 100px;
 }
