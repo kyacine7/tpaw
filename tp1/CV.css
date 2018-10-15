@@ -17,6 +17,10 @@ p{
 h1{
   text-decoration-line: underline;
 }
+img:hover{
+  width: 50%;
+  height: 50%;
+}
 tr:hover{
   background-color: black;
   color: white;
