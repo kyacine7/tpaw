@@ -1,13 +1,20 @@
 body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+              background-color: lightgray;              
+              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco",
+               "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
               font-size: 16px;
               margin: 0 auto;
               max-width: 800px;               
           }
 
+@media only screen and (max-width: 600px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+
 p{
-	font-size: 2em;
+	font-size: 2.2em;
   font-weight: bold;
   color: brown;
   text-align: center;
