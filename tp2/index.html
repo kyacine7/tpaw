@@ -1,74 +1,77 @@
 <!doctype html>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>TP2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>TP2</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css" />
+        <script type="text/javascript" src="formulaire.js"></script>
+        
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+        <style>
+          body{
+              background-color: #e9ebee;              
+              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+              font-size: 16px;
+              margin: 0 auto;
+              max-width: 800px;              
+          }
+        </style>
 
-    <style>
+        <link rel="stylesheet" href="style.css" />
+        <script type="text/javascript" src="formulaire.js"></script>
+        
+        
+    </head>
+    <body>    
+            
+        <h1>Saisie d'une fiche "personne"</h1>
 
-    </style>
+        <form name="personne">
+            
+                <table>
+                            
+                    <tr>
+                         <td><label for="nom">Nom :</label></td>
+                         <td> <input type="text" id = "nom" name="nom" minlength="5" maxlength="20"/></td>
+                    </tr>
 
-    <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="formulaire.js"></script>
-    <!--<script src="js/main.js"></script>-->
-</head>
+                    <tr>
+                         <td><label for="prenom">Prénom :</label></td>
+                         <td> <input type="text"  id = "prenom" minlength="5" maxlength="20"/></td>
+                    </tr>
 
-<body>
+                    <tr>
+                         <td><label for="date de naissance">Date de naissance :</label></td>
+                         <td ><input type="date" id = "dn" placeholder="JJ/MM/AAAA" /></td>
+                    </tr>
 
-    <form action="">
+                    <tr>
+                         <td><label for="adresse">Adresse :</label></td>
+                         <td> <input type="text"  id = "adresse" minlength="5" maxlength="50"/></td>
+                    </tr>
+                    
+                    <tr>
+                         <td> <label for="mail">Mail :</label></td>
+                         <td> <input type="email" id = "mail" minlength="5" maxlength="30" /></td>
+                    </tr>
 
-        <div class="head"></div>
-        <h1>Saisie d'une fiche "PERSONNE"</h1>
-    </form>
-
-
-    <div class="group_input">
-
-
-        <form action="">
-            Nom:
-            <input type="text" name="nom" id="nom" value="" min="5" max="20" placeholder="votre nom est:" required="required">
-            <div class="val_errur"> </div>
-
-            Prénom:
-            <input type="text" name="prénom" id="prénom" value="" placeholder="votre prénom est:" min="5" max="20"
-                required="required">
-            <div class="val_errur"> </div>
-
-            Date de naissance:
-            <input type="Date" name="date-naissance" id="date" value="" placeholder="" required="required">
-            <div class="val_errur"> </div>
-
-            Adresse:
-            <input type="text" name="adresse" id="adresse" value="" placeholder="votre adresse est:" min="5" max="50"
-                required="required">
-            <div class="val_errur"> </div>
-
-            Mail:
-            <input type="email" name="mail" id="mail" value="" placeholder="votre mail est" min="5" max="30" required="required">
+                    <tr>
+                         <td><input type="button" id = "bouton" value="Valider" onclick="validation()"/></td>
+                    </tr>
+                
+                </table>
+            
         </form>
 
-        <form action="">
+      <div id="error"> </div> 
+    
+      <div id="resultat"> </div>
 
-            <input type="button" value="Valider" onclick="validation()">
-            <div id="erreur" class="l_erreur"></div>
-            <div id="resultat" class="le_resultat"></div>
-    </div>
-
-
-    </form>
-
-
-
-
-</body>
-
+    </body>
+    
 </html>
