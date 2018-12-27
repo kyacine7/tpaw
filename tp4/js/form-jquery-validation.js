@@ -1,11 +1,11 @@
 $(document).ready(function(){
     console.log("test longueur de text");
     $(document).keyup(function () {
-    $("#nomL").html($("#nom").val().length+" Car");
-    $("#prenomL").html($("#prenom").val().length+" Car");
-    $("#bdayL").html($("#bday").val().length+" Car");
-    $("#adressL").html($("#adress").val().length+" Car");
-    $("#mailL").html($("#mail").val().length+" Car");
+        $("#nomL").html($("#nom").val().length+" Car");
+        $("#prenomL").html($("#prenom").val().length+" Car");
+        $("#bdayL").html($("#bday").val().length+" Car");
+        $("#adressL").html($("#adress").val().length+" Car");
+        $("#mailL").html($("#mail").val().length+" Car");
     });
 })
 
@@ -87,6 +87,12 @@ $(document).ready(function () {
                 + document.querySelector("#adress").value
                 + '"><img src="https://maps.googleapis.com/maps/api/staticmap?markers='
                 + document.querySelector("#adress").value + '&zoom=10&size=400x300&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg"/></a>');
+        }
+
+        if ($("#nom").val() !== "" && $("#prenom").val() !== "" && $("#bday").val() !== ""
+            && $("#adress").val() !== "" && $("#mail").val() !== "") {
+
+            
         }
 
     });
