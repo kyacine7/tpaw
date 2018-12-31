@@ -14,7 +14,26 @@ function showPosition(position) {
         + latlon + "&zoom=13&size=400x300&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg";
 
     $("#map").html("<img src='" + img_url + "'>");
-    document.querySelector("#adress").value = position.coords.latitude + ","+position.coords.longitude;
+
+    /*
+    var geocoder = new google.maps.Geocoder;
+    var latlng = { lat: position.coords.latitude, lng: position.coords.longitude };
+
+    geocoder.geocode({ 'location': latlng }, function (results, status) {
+        if (status === 'OK') {
+            if (results[0]) {
+
+                $("#adress").val(results[0].formatted_address);
+            } else {
+                window.alert('No results found');
+            }
+        } else {
+            window.alert('Geocoder failed due to: ' + status);
+        }
+    });
+    */
+   
+    document.querySelector("#adress").value = latlon;
 
 }
 
